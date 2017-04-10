@@ -1,0 +1,39 @@
+
+<style>
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.type {
+    float: right;
+}
+
+.name {
+    float: left;
+    font-weight: bold;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 16px;
+}
+</style>
+
+<div class="card">
+    <span class = "name">{{$ctrl.card.name}}</span> <span class = "type">{{$ctrl.card.type.join("/")}}</span>
+    <img src="images/{{$ctrl.card.image}}.png" style="width:100%">
+    <div class="container">
+    <p>Level: {{$ctrl.card.level}}</p>
+    <p>HP: {{$ctrl.card.hp}}</p>
+  </div>
+</div>

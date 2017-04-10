@@ -2,12 +2,12 @@
 module.exports = function(config) {
   config.set({
 
-    basePath: './app',
+    basePath: './public',
 
     files: [
-      'bower_components/angular/angular.js',
-      'bower_components/angular-route/angular-route.js',
-      'bower_components/angular-mocks/angular-mocks.js',
+      'vendor/angular/angular.js',
+      'vendor/angular-route/angular-route.js',
+      'vendor/angular-mocks/angular-mocks.js',
       'components/**/*.js',
       'view*/**/*.js'
     ],

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bgFramework" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Board Game Server</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bgFramework.css">
+  <script src="vendor/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-route/angular-route.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bgFramework.js"></script>
+  <script src="header.js"></script>
+  <script src="splash/splash.js"></script>
+  <script src="alienExplorers/alienExplorers.js"></script>
+  <script src="pokemon/pokemon.js"></script>
+  <script src="pokemon/components/pokemonCard.js"> </script>
+</head>
+<body>
+    <div class="boardgame-header" ng-controller="HeaderCtrl">
+        <div class="boardgame-header-body">
+            Board Game Framework
+            <a
+                class = "link"
+                ui-sref="splash"
+                >Home
+            </a>
+        </div>
+
+    </div>
+    <div ui-view></div>
+</body>
+</html>
